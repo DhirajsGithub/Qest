@@ -1,0 +1,35 @@
+.button {
+  align-self: stretch;
+  border-radius: 6px;
+  background: var(--Primary-Color, #f54f35);
+  background-color: var(--Primary-Color, #f54f35);
+  color: var(--www-feedspace-io-white, #fff);
+  padding: 9px 13px;
+  font: 500 14px/1 Roboto, sans-serif;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: var(--Primary-Color-Hover, #d93d23);
+}
+
+.button:focus {
+  outline: 2px solid var(--Primary-Color-Focus, #f54f35);
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

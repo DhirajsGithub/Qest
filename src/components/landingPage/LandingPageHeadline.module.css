@@ -1,0 +1,70 @@
+.heading1 {
+    display: flex;
+    max-width: 672px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: start;
+    padding: 0 27px;
+    font: 700 60px/1 Urbanist, -apple-system, Roboto, Helvetica,
+      sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .heading1 {
+      font-size: 40px;
+      padding: 0 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heading1 {
+      font-size: 32px;
+      padding: 0 16px;
+    }
+  }
+  
+  .maximizeYourImpact {
+    color: var(--Black-Text-Color, #191a15);
+  }
+  
+  @media (max-width: 991px) {
+    .maximizeYourImpact {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .maximizeYourImpact {
+      font-size: 32px;
+    }
+  }
+  
+  .container {
+    margin-top: 12px;
+    color: rgba(245, 79, 53, 1);
+  }
+  
+  @media (max-width: 991px) {
+    .container {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      font-size: 32px;
+    }
+  }
+  
+  .brandR {
+    font-family: Roboto, sans-serif;
+    color: rgba(25,26,21,1);
+  }
+  
+  .brandMax {
+    font-family: Roboto, sans-serif;
+    color: rgba(161,15,15,1);
+  }

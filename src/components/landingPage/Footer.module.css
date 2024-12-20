@@ -1,0 +1,194 @@
+.footer {
+    font-family: Roboto, sans-serif;
+  }
+  
+  .footerContainer {
+    background: var(--Black-Text-Color, #1f1f1f);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 30px;
+    padding-top: 100px;
+  }
+  
+  .content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 40px;
+    font-size: 16px;
+    color: rgba(250, 250, 250, 1);
+    font-weight: 400;
+    justify-content: space-between;
+  }
+  
+  .linkSection {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: start;
+    /* width: 156px; */
+    /* padding: 0 20px 26px 0; */
+  }
+  
+  .sectionTitle {
+    line-height: 2;
+    letter-spacing: -0.1px;
+    color: #d5d5d5f3 !important;
+      
+
+  }
+  
+  .linkList {
+    line-height: 40px;
+    letter-spacing: -0.2px;
+    margin-top: 20px;
+  }
+  
+  .link {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+  }
+  .linkList a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .downloadSection {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: start;
+    letter-spacing: -0.2px;
+   
+  }
+  
+  .downloadLink {
+    display: flex;
+    margin-top: 20px;
+    align-items: flex-start;
+    gap: 13px;
+  }
+  .downloadLink a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  } 
+  .downloadLink a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .downloadIcon {
+    /* aspect-ratio: 0.9;
+    object-fit: contain;
+    width: 18px;
+    align-self: end; */
+    /* margin-top: 50px; */
+  }
+  
+  .contactSection {
+    display: flex;
+    /* min-width: 240px; */
+    flex-direction: column;
+    overflow: hidden;
+    align-items: start;
+    
+  }
+  
+  .contactInfo {
+    line-height: 40px;
+    letter-spacing: -0.2px;
+    margin-top: 20px;
+    /* width: 242px; */
+  }
+  
+  .decorativeImage {
+    aspect-ratio: 0.81;
+    object-fit: contain;
+    width: 17px;
+    z-index: 10;
+  }
+  
+  .bottomSection {
+    display: flex;
+    margin-top: 80px;
+    width: 100%;
+    /* max-width: 1111px; */
+    flex-direction: column;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1;
+  }
+  
+  .divider {
+    aspect-ratio: 1000;
+    object-fit: contain;
+    width: 100%;
+  }
+  
+  .bottomContent {
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .copyright {
+    opacity: 0.65;
+  }
+  
+  .logo {
+    aspect-ratio: 8.55;
+    object-fit: contain;
+    /* width: 162px; */
+    align-self: start;
+    max-width: 100%;
+  }
+  .birdWise{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    line-height: 40px;
+  }
+
+  .socials{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .socials a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .socials a:hover{
+    cursor: pointer;
+  }
+
+  @media (max-width: 991px) {
+    .footerContainer {
+      max-width: 100%;
+      padding: 80px 20px;
+    }
+  
+    .content {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  
+    .bottomSection {
+      max-width: 100%;
+      margin-top: 50px;
+    }
+  
+    .bottomContent {
+      max-width: 100%;
+    }
+  }

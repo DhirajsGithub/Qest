@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Urbanist;
+
+  }
+  
+  .heading {
+    color: var(--Black-Text-Color, #1f1f1f);
+    letter-spacing: -1.5px;
+    align-self: stretch;
+    z-index: 10;
+    margin-top: -9px;
+    width: 100%;
+    font: 700 50px/1 Urbanist, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .description {
+    color: #475467;
+    font-feature-settings: "liga" off, "clig" off;
+    letter-spacing: -0.2px;
+    margin-top: 20px;
+    font: 400 18px/32px Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .appImage {
+    aspect-ratio: 5.81;
+    object-fit: contain;
+    object-position: center;
+    width: 430px;
+    margin-top: 55px;
+    max-width: 100%;
+  }
+  
+  @media (max-width: 991px) {
+    .heading {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  
+    .description {
+      max-width: 100%;
+    }
+  
+    .appImage {
+      margin-top: 40px;
+    }
+  }

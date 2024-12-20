@@ -1,0 +1,103 @@
+.carousel{
+  width: 900px;
+}
+.carouselWrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+    border-radius: 8px;
+    display: flex;
+    max-width: 302px;
+    padding-bottom: 7px;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    margin: 0 15px;
+  }
+  
+  .imageContainer {
+    border-radius: 8px;
+    background-color: rgba(249, 248, 254, 1);
+    align-self: stretch;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .cardImage {
+    aspect-ratio: 0.84;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+  
+  .title {
+    color: var(--Black-Text-Color, #1f1f1f);
+    margin-top: 18px;
+    font: 600 28px/1 Roboto, sans-serif;
+  }
+  
+  .description {
+    color: rgba(71,84,103,1);
+    margin-top: 16px;
+    font: 400 14px/25px Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  .description span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .link {
+    color: var(--Link-Color, #00e);
+    text-decoration: none;
+  }
+
+  .customArrow {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    color: #1F1F1F;
+    transition: background-color 0.3s ease;
+  }
+  
+  .customArrowPrev {
+    margin-right: 20px;
+  }
+  
+  .customArrowNext {
+    margin-left: 20px;
+  }
+  
+  .customArrow:hover {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+  }
+  
+  .customArrow:disabled {
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    cursor: not-allowed;
+  }
+
+  @media (max-width: 990px) {
+    .carousel{
+      width: 70%;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 24px;
+    }
+    
+    .description {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }

@@ -1,0 +1,220 @@
+.pricingSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+  
+  .title {
+    color: var(--Black-Text-Color, #1f1f1f);
+    text-align: center;
+    font: 700 50px/56px Urbanist, -apple-system, Roboto, Helvetica, sans-serif;
+    letter-spacing: -1.5px;
+  }
+  
+  .subtitle {
+    color: #475467;
+    text-align: center;
+    font: 400 16px/29px Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+    margin-top: 20px;
+  }
+  
+  .highlight {
+    color: #a10f0f;
+  }
+  
+  .enterpriseInfo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 40px;
+    font: 400 16px/29px Roboto, sans-serif;
+  }
+  
+  .salesButton {
+    border-radius: 8px;
+    background-color: #f54f35;
+    color: #fff;
+    padding: 0 9px;
+    font-size: 14px;
+    margin-left: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .toggleContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 32px 0;
+  }
+  
+  .toggleLabel {
+    color: #1f1f1f;
+    font: 400 18px/32px Roboto, sans-serif;
+  }
+  
+  .toggleButton {
+    width: 48px;
+    height: 32px;
+    background-color: rgba(22, 28, 45, 0.15);
+    border-radius: 16px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+  
+  .toggleKnob {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.2s;
+  }
+  
+  .toggleKnobActive {
+    transform: translateX(16px);
+  }
+  
+  .savingsTag {
+    background-color: rgba(245, 79, 53, 0.1);
+    color: #f54f35;
+    padding: 7px 12px;
+    border-radius: 14.5px;
+    font: 700 13px Roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.63px;
+  }
+  
+  .cardsContainer {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  
+  .pricingCard {
+    border: 1px solid #e7e9ed;
+    border-radius: 8px;
+    padding: 34px 46px;
+    background-color: #fff;
+    max-width: 327px;
+    font-family: Roboto;
+
+  }
+  
+  .cardHeader {
+    margin-bottom: 24px;
+  }
+  
+  .planType {
+    color: #f54f35;
+    font: 700 14px Roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.53px;
+  }
+  
+  .priceContainer {
+    display: flex;
+    align-items: baseline;
+    margin: 16px 0;
+  }
+  
+  .currency {
+    font-size: 23px;
+    color: #1f1f1f;
+  }
+  
+  .price {
+    font-size: 56px;
+    color: #1f1f1f;
+    letter-spacing: -1.88px;
+    margin: 0 4px;
+  }
+  
+  .period {
+    color: #1f1f1f;
+    font: 400 16px/29px Roboto, sans-serif;
+  }
+  
+  .billingFrequency {
+    color: #475467;
+    font: 400 16px/29px Roboto, sans-serif;
+  }
+  
+  .featuresList {
+    margin: 24px 0;
+  }
+  
+  .featureItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  
+  .featureIcon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .featureText {
+    color: #1f1f1f;
+    font: 400 16px/29px Roboto, sans-serif;
+  }
+  
+  .featureInactive {
+    color: #949494;
+  }
+  
+  .startButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 205px;
+    padding: 14px 21px;
+    background-color: #fef1ef;
+    border: none;
+    border-radius: 8px;
+    color: #f54f35;
+    font: 700 16px Roboto, sans-serif;
+    cursor: pointer;
+  }
+  
+  .buttonIcon {
+    width: 13px;
+    height: 11px;
+  }
+  
+  .noCreditCard {
+    color: #161c2d;
+    font: 400 16px/29px Roboto, sans-serif;
+    margin-top: 16px;
+  }
+  
+  .compareLink {
+    color: #00e;
+    font: 400 18px/32px Roboto, sans-serif;
+    text-decoration: underline;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .title {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  
+    /* .cardsContainer {
+      grid-template-columns: 1fr;
+    }
+  
+    .pricingCard {
+      padding: 20px;
+    } */
+  }
