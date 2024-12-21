@@ -14,18 +14,23 @@ import { BusinessManagement } from '../../components/landingPage/BusinessManagem
 import { FAQ } from '../../components/landingPage/FAQ';
 import { Footer } from '../../components/landingPage/Footer';
 import ServicesSections from '../../components/landingPage/ServicesSections';
+import Navigation from '../../components/layout/Navbar/Navigation';
+import GetStartedDemoButtons from '../../components/landingPage/GetStartedDemoButtons';
+import OutFeatures from '../../components/landingPage/OutFeatures';
+import GradientBackground from '../../components/common/GradientBackground';
 
 
 const LandingPage:React.FC = () => {
   return (
     <div>
-        <BrandLogo />
-        <SecondaryButton name='Login' />
-        <PrimaryButton name='Sign Up' icon={<GoChevronDown />} />
-        <NavItem name='Features' icon={GoChevronDown} />
+      <GradientBackground />
+      <Navigation />
+      
         <HeaderSearchBar />
-        <ClientEngagement name='Client Engagement' />
+       
         <LandingPageHeadline />
+        <GetStartedDemoButtons />
+        <OutFeatures />
         <OnboardingSteps />
         <WhyRmax />
         <ServicesSections />

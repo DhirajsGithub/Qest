@@ -1,48 +1,81 @@
 .buttonMenuMegaMenu {
-    border-radius: 8px;
-    display: flex;
-    max-width: 91px;
-    align-items: center;
-    justify-content: start;
-    padding: 8px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
-  
-  .buttonMenuMegaMenu:hover {
-    background-color: rgba(0, 0, 0, 0.04);
-  }
-  
-  .buttonMenuMegaMenu:focus-visible {
-    outline: 2px solid #0066cc;
-    outline-offset: 2px;
-  }
-  
-  .features {
-    color: var(--Black-Text-Color, #1f1f1f);
-    text-align: center;
-    align-self: stretch;
-    margin: auto 0;
-    font: 400 14px/1 Roboto, sans-serif;
-  }
-  
-  .svgMargin {
-    align-self: stretch;
-    display: flex;
-    min-height: 16px;
-    padding-left: 4px;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    width: 20px;
-    margin: auto 0;
-  }
-  
-  .svg {
-    display: flex;
-    min-height: 16px;
-    width: 16px;
-    flex-direction: column;
-    overflow: hidden;
-    justify-content: center;
-  }
+  border-radius: 8px;
+  display: flex;
+  max-width: 91px;
+  align-items: center;
+  justify-content: start;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.buttonMenuMegaMenu:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.buttonMenuMegaMenu:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+.features {
+  color: var(--Black-Text-Color, #1f1f1f);
+  text-align: center;
+  align-self: stretch;
+  margin: auto 0;
+  font: 400 14px/1 Roboto, sans-serif;
+}
+
+.svgMargin {
+  align-self: stretch;
+  display: flex;
+  min-height: 16px;
+  padding-left: 4px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 20px;
+  margin: auto 0;
+}
+
+.svg {
+  display: flex;
+  min-height: 16px;
+  width: 16px;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+}
+.navigation {
+  border-radius: 8px;
+  border: 1px solid var(--Stroke-Color, #e5e7eb);
+  background: #fff;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  width: 80%;
+  margin: 20px auto;
+}
+.navItems{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navBtns{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.line{
+  background: var(--www-feedspace-io-mischka, #D1D5DB);
+  width: 1px;
+height: 16px;
+}
+.colRight{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

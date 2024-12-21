@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './BusinessManagement.module.css';
-import { HeadingProps, ImageProps } from '../../types/types';
+import { HeadingProps } from '../../types/types';
+import googlePlaySvg from "../../assets/icons/Google Play Black Borde.svg"
+import appStoreSvg from "../../assets/icons/App Store Black Borde.svg"
 
 const Heading: React.FC<HeadingProps> = ({ title, description }) => {
     return (
@@ -11,16 +13,6 @@ const Heading: React.FC<HeadingProps> = ({ title, description }) => {
     );
   };
 
-const Image: React.FC<ImageProps> = ({ src, alt }) => {
-    return (
-      <img
-        loading="lazy"
-        src={src}
-        alt={alt}
-        className={styles.appImage}
-      />
-    );
-  };
 
 export const BusinessManagement: React.FC = () => {
   return (
@@ -29,10 +21,14 @@ export const BusinessManagement: React.FC = () => {
         title="Manage Your Business On the Go"
         description="With free Business Mobile App, you can manage your entire service business from anywhere. Stay connected and stay in control, no matter where your day takes you."
       />
-      <Image
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/58c0439e95c53dd53ed3d545d8d2395d149a9b96f52d2a9db1b92bfae6635f93?placeholderIfAbsent=true&apiKey=79426ccaf24d49c38858d00ea833e975"
-        alt="Business management mobile application interface"
-      />
+      <div className={styles.downloadBtns}>
+        <div>
+          <img src={appStoreSvg} alt="" />
+        </div>
+        <div>
+          <img src={googlePlaySvg} alt="" />
+        </div>
+      </div>
     </div>
   );
 };

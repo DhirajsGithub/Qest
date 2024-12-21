@@ -1,0 +1,17 @@
+.gradient-background {
+    position: absolute;  
+    top: 0;
+    
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+    z-index: -1; 
+  
+    background: radial-gradient(
+      circle,
+      rgba(255, 214, 214, 0.3) 15%, 
+      transparent 60%
+    );
+    pointer-events: none; 
+  }
+  

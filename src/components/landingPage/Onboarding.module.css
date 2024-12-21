@@ -4,6 +4,9 @@
     align-items: center;
     padding: 40px 20px;
     background-color: #ffffff;
+    margin-top: 50px;
+    max-width: 80%;
+    margin: 0 auto;
   }
   
   .mainTitle {
@@ -103,6 +106,11 @@
 
   }
   
+  @media (max-width: 991px) {
+    .onboardingSection {
+      max-width: 90%;
+    }
+  }
   
   @media (max-width: 991px) {
     .mainTitle {

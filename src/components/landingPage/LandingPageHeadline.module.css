@@ -1,70 +1,95 @@
+.headlineWrapper {
+  margin: 0 auto;
+  margin-top: 70px;
+  max-width: 672px;
+  display: flex;
+  padding: 0 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.headlineWrapper p {
+  color: var(--Body-text-Color, #475467);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Sub heading Text */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: -0.2px;
+}
 .heading1 {
-    display: flex;
-    max-width: 672px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: start;
-    padding: 0 27px;
-    font: 700 60px/1 Urbanist, -apple-system, Roboto, Helvetica,
-      sans-serif;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: start;
+
+  font: 700 60px/1 Urbanist, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .heading1 {
+    font-size: 40px;
+    padding: 0 20px;
   }
-  
-  @media (max-width: 991px) {
-    .heading1 {
-      font-size: 40px;
-      padding: 0 20px;
-    }
+}
+
+@media (max-width: 480px) {
+  .heading1 {
+    font-size: 32px;
+    padding: 0 16px;
   }
-  
-  @media (max-width: 480px) {
-    .heading1 {
-      font-size: 32px;
-      padding: 0 16px;
-    }
-  }
-  
+}
+
+.maximizeYourImpact {
+  color: var(--Black-Text-Color, #191a15);
+}
+
+@media (max-width: 991px) {
   .maximizeYourImpact {
-    color: var(--Black-Text-Color, #191a15);
+    max-width: 100%;
+    font-size: 40px;
   }
-  
-  @media (max-width: 991px) {
-    .maximizeYourImpact {
-      max-width: 100%;
-      font-size: 40px;
-    }
+}
+
+@media (max-width: 480px) {
+  .maximizeYourImpact {
+    font-size: 32px;
   }
-  
-  @media (max-width: 480px) {
-    .maximizeYourImpact {
-      font-size: 32px;
-    }
+  .headlineWrapper p {
+    font-size: 16px;
   }
-  
+}
+
+.container {
+  margin-top: 12px;
+  color: rgba(245, 79, 53, 1);
+}
+
+@media (max-width: 991px) {
   .container {
-    margin-top: 12px;
-    color: rgba(245, 79, 53, 1);
+    max-width: 100%;
+    font-size: 40px;
   }
-  
-  @media (max-width: 991px) {
-    .container {
-      max-width: 100%;
-      font-size: 40px;
-    }
+}
+
+@media (max-width: 480px) {
+  .container {
+    font-size: 32px;
   }
-  
-  @media (max-width: 480px) {
-    .container {
-      font-size: 32px;
-    }
-  }
-  
-  .brandR {
-    font-family: Roboto, sans-serif;
-    color: rgba(25,26,21,1);
-  }
-  
-  .brandMax {
-    font-family: Roboto, sans-serif;
-    color: rgba(161,15,15,1);
-  }
+}
+
+.brandR {
+  font-family: Roboto, sans-serif;
+  color: rgba(25, 26, 21, 1);
+}
+
+.brandMax {
+  font-family: Roboto, sans-serif;
+  color: rgba(161, 15, 15, 1);
+}

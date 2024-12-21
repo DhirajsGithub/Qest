@@ -7,7 +7,8 @@ interface LandingPageHeadlineProps {
 
 export const LandingPageHeadline: React.FC<LandingPageHeadlineProps> = ({ className }) => {
   return (
-    <div className={`${styles.heading1} ${className || ''}`}>
+    <div className={styles.headlineWrapper}>
+       <div className={`${styles.heading1} ${className || ''}`}>
       <div className={styles.maximizeYourImpact}>
         Maximize Your Impact
       </div>
@@ -17,6 +18,9 @@ export const LandingPageHeadline: React.FC<LandingPageHeadlineProps> = ({ classN
         <span className={styles.brandMax}>Max</span>
       </div>
     </div>
+    <p>Enhance your business with Rmax's all-in-one platform—streamlining client engagement, automating workflows, and fueling growth.</p>
+    </div>
+   
   );
 };
 

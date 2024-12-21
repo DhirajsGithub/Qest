@@ -3,6 +3,8 @@
     display: flex;
     max-width: 450px;
     flex-direction: column;
+    margin: 0 auto;
+    margin-top: 80px;
   }
   .brandAi{
     height: 58px;

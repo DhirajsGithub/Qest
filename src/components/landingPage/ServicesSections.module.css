@@ -1,3 +1,8 @@
+.carouselBox{
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
 .carousel{
   width: 900px;
 }
@@ -83,15 +88,50 @@
     /* background-color: rgba(0, 0, 0, 0.2); */
     cursor: not-allowed;
   }
+  .heading {
+    color: #191a15;
+    text-align: center;
+    letter-spacing: -1.5px;
+    font: 700 50px/1 Urbanist, -apple-system, Roboto, Helvetica, sans-serif;
+   
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  .subheading {
+    color: #475467;
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    letter-spacing: -0.2px;
+    opacity: 0.7;
+    max-width: 800px;
+    font: 400 18px/32px Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
 
   @media (max-width: 990px) {
     .carousel{
       width: 70%;
     }
+    .heading{
+      width: 80%;
+      font-size: 40px;
+    }
+    .subheading{
+      width: 90%;
+      font-size: 18px;
+    }
   }
   
   
   @media (max-width: 768px) {
+    .carouselBox{
+      max-width: 90%;
+      margin-top: 40px;
+    }
     .title {
       font-size: 24px;
     }
@@ -100,4 +140,11 @@
       font-size: 12px;
       line-height: 20px;
     }
+    .heading{
+      width: 90%;
+    }
+    .subheading{
+      width: 95%;
+    }
+    
   }

@@ -3,6 +3,9 @@
     flex-direction: column;
     font-family: Roboto, sans-serif;
     letter-spacing: -0.2px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 40px 100px
   }
   
   .faqTitle {
@@ -126,11 +129,15 @@
     border: 0;
   }
   
+
   @media (max-width: 991px) {
     .faqTitle {
       font-size: 40px;
     }
-  
+    .faqContainer{
+
+      padding: 40px 60px;
+    }
     .faqDescription,
     .searchContainer {
       max-width: 100%;
@@ -142,5 +149,11 @@
   
     .faqItem {
       padding: 20px;
+    }
+  }
+  @media (max-width: 750px) {
+    .faqContainer{
+      max-width: 95%;
+      padding: 40px 20px;
     }
   }
