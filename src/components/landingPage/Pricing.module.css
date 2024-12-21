@@ -78,7 +78,8 @@
   }
   
   .toggleKnobActive {
-    transform: translateX(16px);
+    transform: translateX(38px);
+    background-color: #f54f35;
   }
   
   .savingsTag {

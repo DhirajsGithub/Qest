@@ -7,7 +7,7 @@ import { IoSearch } from "react-icons/io5";
 
 
 
-const SearchBar: React.FC<SearchBarProps> = ({ placeholder, searchIcon }) => {
+const SearchBar: React.FC<SearchBarProps> = ({ placeholder }) => {
     return (
       <form className={styles.searchContainer} role="search">
         <label htmlFor="faqSearch" className={styles.visuallyHidden}>

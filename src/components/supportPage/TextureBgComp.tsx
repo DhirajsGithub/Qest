@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./TextureBgComp.module.css";
 
 const TextureBgComp = () => {

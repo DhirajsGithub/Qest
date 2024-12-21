@@ -9,7 +9,6 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
   description,
   backgroundImage,
   bgUp,
-  height,
 }) => (
   <div  className={styles.featureCard}>
     {icon && <img

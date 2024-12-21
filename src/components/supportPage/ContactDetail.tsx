@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./ContactDetail.module.css";
 import InputLableField from "./InputLableField";
 import { PrimaryButton } from "../common/buttons/PrimaryButton";

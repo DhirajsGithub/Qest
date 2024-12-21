@@ -1,50 +1,76 @@
-# React + TypeScript + Vite
+# Quest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application built with Vite, TypeScript, and React Router DOM.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Hosted Link
 
-## Expanding the ESLint configuration
+<!-- [Visit Code-Ant App](https://code-ant-one.vercel.app/) -->
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
+## Demo Video Link
+[Demo video link](https://drive.google.com/file/d/11ZJcLJUcab-OubIkNAHG5grQch4rLJHR/view?usp=sharing)
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## How to Use
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### 1. Landing Page (`/`)
+   - When you visit the application, you’ll start at the landing page.
+   - Explore an overview of the platform and its features.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### 2. Pricing Page (`/pricing`)
+   - Visit the pricing page to view subscription plans and options.
+   - Choose the plan that suits your needs and proceed to purchase.
+
+### 3. Support Page (`/support`)
+   - Navigate to the support page for assistance.
+   - Access FAQs, contact details, or submit a support ticket for help.
+
+### 4. Feature Modal
+   - When you hover over or click on the **Feature** button in the header, the **Feature modal** will open.
+   - The modal will display additional details or features of the platform.
+
+---
+
+## Visual Guide 
+
+
+![Dashboard Page](./src/assets/images/use.gif) 
+
+---
+
+## Run the app locally with 4 simple steps:
+## Prerequisites
+
+Ensure you have the following installed on your system:
+
+- **Node.js**: Version 20 or higher
+- **npm**: Comes bundled with Node.js
+
+
+## Installation
+
+1. Clone the repository or download the source code:
+
+   ```bash
+   git clone https://github.com/DhirajsGithub/Qest
+    ```
+   ```bash
+   cd Qest
+   ```
+2. Install the dependencies:
+  
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+
+   ```bash
+    npm run dev
+    ```
+4. Open the browser and navigate to `http://localhost:5173/` to view the application.
+
+

@@ -1,4 +1,3 @@
-import React from "react";
 import { PrimaryButton } from "../common/buttons/PrimaryButton";
 import { IoArrowForward } from "react-icons/io5";
 import { SecondaryButton } from "../common/buttons/SecondaryButton";

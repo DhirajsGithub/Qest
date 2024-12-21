@@ -82,16 +82,11 @@ const ServicesSections = () => {
   const carouselRef = useRef(null);
 
   const handlePrev = () => {
-    if (carouselRef.current) {
-      carouselRef.current.prev();
-    }
+    console.log("prv")
   };
 
   const handleNext = () => {
-    console.log("first");
-    if (carouselRef.current) {
-      carouselRef.current.next();
-    }
+    console.log("next")
   };
   return (
     <div className={styles.carouselBox}>
