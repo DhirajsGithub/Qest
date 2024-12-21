@@ -34,10 +34,11 @@
   
   .searchInputWrapper {
     border-radius: 8px;
-    border: 1px solid var(--Primary-Color, #f54f35);
+   
     background-color: #fff;
     display: flex;
-    padding: 1px 20px;
+    /* padding: 1px 20px; */
+    height: 48px;
     align-items: center;
     justify-content: space-between;
   }
@@ -46,11 +47,17 @@
     border: none;
     outline: none;
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
     color: rgba(202, 202, 202, 1);
     font-weight: 500;
     line-height: 1.6;
-    padding: 12px 0;
+    border: 1px solid var(--Primary-Color, #f54f35);
+    height: 48px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 10px 20px;
+    color: var(--Black-Text-Color, #1f1f1f);
+
   }
   
   .searchIcon {
@@ -103,7 +110,7 @@
     justify-content: center;
     gap: 4px;
     margin-top: 25px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 32px;
   }
   
@@ -127,6 +134,15 @@
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+  }
+  .searchBtn{
+    border-radius: 0px 8px 8px 0px;
+    background: var(--Primary-Color, #F54F35);
+    height: 48px;
+    width: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
 
@@ -155,5 +171,11 @@
     .faqContainer{
       max-width: 95%;
       padding: 40px 20px;
+    }
+    .questionText{
+      font-size: 18px;
+    }
+    .supportSection{
+      font-size: 14px;
     }
   }

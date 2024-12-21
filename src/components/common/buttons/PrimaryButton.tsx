@@ -9,6 +9,7 @@ interface PrimaryButtonProps {
   type?: 'button' | 'submit' | 'reset';
   disabled?: boolean;
   ariaLabel?: string;
+  extraPadding?: boolean;
 }
 
 export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
@@ -19,6 +20,7 @@ export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
   type = 'button',
   disabled = false,
   ariaLabel,
+  extraPadding,
 }) => {
   return (
     <button
@@ -27,6 +29,7 @@ export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
       type={type}
       disabled={disabled}
       aria-label={ariaLabel || name}
+      style={{padding: extraPadding ? '15px 20px' : ''}}
     >
      {name}
       {icon && <span className={styles.icon}>{icon}</span>}

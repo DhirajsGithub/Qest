@@ -81,3 +81,15 @@ export interface StepCardProps {
     title: string;
     description: string;
   }
+
+  export interface PlanFeature {
+    name: string;
+    starter: string | number;
+    premium: string | number;
+  }
+  
+  export interface PlanDetails {
+    name: string;
+    price: string;
+    description: string;
+  }

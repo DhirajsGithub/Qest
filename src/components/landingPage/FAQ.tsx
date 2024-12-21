@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './FAQ.module.css';
 import { FAQItemProps, SearchBarProps } from '../../types/types';
 import { IoChevronUp, IoChevronForwardSharp } from "react-icons/io5";
+import { IoSearch } from "react-icons/io5";
 
 
 
@@ -20,12 +21,9 @@ const SearchBar: React.FC<SearchBarProps> = ({ placeholder, searchIcon }) => {
             placeholder={placeholder}
             aria-label="Search frequently asked questions"
           />
-          <img
-            loading="lazy"
-            src={searchIcon}
-            alt=""
-            className={styles.searchIcon}
-          />
+          <div className={styles.searchBtn}>
+            <IoSearch color='#fff' fontSize={18} />  
+          </div>
         </div>
       </form>
     );

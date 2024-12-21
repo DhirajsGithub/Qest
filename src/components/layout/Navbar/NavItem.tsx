@@ -16,15 +16,24 @@ export const NavItem: React.FC<NavItemProps> = ({
   onClick,
   path
 }) => {
+  const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    if (path === "/features") {
+      event.preventDefault();
+      onClick?.(); 
+    }
+  };
   return (
-    <Link style={{textDecoration: "none", color: "inherit"}} to={path} className={styles.navLink}>
+    <Link onClick={handleClick} style={{textDecoration: "none", color: "inherit"}} to={path} className={styles.navLink}>
     <div 
       className={styles.buttonMenuMegaMenu}
       onClick={onClick}
       role="button"
       tabIndex={0}
+      onMouseEnter={() => {
+        onClick?.();
+      }}
       onKeyDown={(e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
+        if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
           onClick?.();
         }
