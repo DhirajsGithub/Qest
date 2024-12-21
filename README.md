@@ -6,7 +6,7 @@ A modern React application built with Vite, TypeScript, and React Router DOM.
 
 ## Hosted Link
 
-<!-- [Visit Code-Ant App](https://code-ant-one.vercel.app/) -->
+[https://qest-nine.vercel.app/](https://qest-nine.vercel.app/)
 
 ---
 ## Demo Video Link
@@ -18,18 +18,22 @@ A modern React application built with Vite, TypeScript, and React Router DOM.
 ## How to Use
 
 ### 1. Landing Page (`/`)
+   - https://qest-nine.vercel.app/
    - When you visit the application, you’ll start at the landing page.
    - Explore an overview of the platform and its features.
 
 ### 2. Pricing Page (`/pricing`)
+   - https://qest-nine.vercel.app/pricing
    - Visit the pricing page to view subscription plans and options.
    - Choose the plan that suits your needs and proceed to purchase.
 
 ### 3. Support Page (`/support`)
+   - https://qest-nine.vercel.app/support
    - Navigate to the support page for assistance.
    - Access FAQs, contact details, or submit a support ticket for help.
 
 ### 4. Feature Modal
+   - https://qest-nine.vercel.app/
    - When you hover over or click on the **Feature** button in the header, the **Feature modal** will open.
    - The modal will display additional details or features of the platform.
 
